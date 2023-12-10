@@ -1,2 +1,3 @@
 - Email: manager@example.com
 - Password: managerpass1234
+- http://127.0.0.1:8000/accounts/login/manager
