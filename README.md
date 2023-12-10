@@ -1,0 +1,2 @@
+- Email: manager@example.com
+- Password: managerpass1234
