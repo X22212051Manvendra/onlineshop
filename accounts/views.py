@@ -3,7 +3,6 @@ from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
 
 from .forms import UserRegistrationForm, UserLoginForm, ManagerLoginForm, EditProfileForm
-from accounts.models import User
 
 
 def create_manager():
@@ -11,6 +10,7 @@ def create_manager():
     to execute once on startup:
     this function will call in online_shop/urls.py
     """
+    from accounts.models import User
     if not User.objects.filter(email="manager@example.com").first():
         user = User.objects.create_user(
             "manager@example.com", 'shop manager' ,'managerpass1234'
